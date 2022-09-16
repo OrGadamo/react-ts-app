@@ -3,7 +3,7 @@ const USERS_API: string =
 export default async function getUsers(): Promise<any> {
   try {
     return await fetch(USERS_API).then((res) => res.json());
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
   }
 }
